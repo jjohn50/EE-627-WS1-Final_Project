@@ -2,10 +2,10 @@
 import numpy
 import pandas as pd
 
-# dataDir='C:/Users/justi/Desktop/EE-627-WS1-Final_Project/data_in_matrixForm'
-# file_name_test='data_in_matrixForm/testTrack_hierarchy.txt'
-# file_name_train='data_in_matrixForm/trainIdx2_matrix.txt'
-# output_file= 'data_in_matrixForm/output1.txt' 
+dataDir='C:/Users/justi/Desktop/EE-627-WS1-Final_Project/data_in_matrixForm'
+file_name_test='data_in_matrixForm/testTrack_hierarchy.txt'
+file_name_train='data_in_matrixForm/trainIdx2_matrix.txt'
+output_file= 'data_in_matrixForm/output1.txt' 
 
 # fTest= open(file_name_test, 'r')
 # fTrain=open(file_name_train, 'r')
