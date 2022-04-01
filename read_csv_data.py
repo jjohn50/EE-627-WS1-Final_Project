@@ -16,7 +16,7 @@ df["Predictor1"] = df["Predictor1"].astype(int)
 df2["Predictor"]= (df["Predictor"]+df["Predictor1"])/2
 print(df2)
 
-df2.to_csv("output3.csv",index=None)  
+df2.to_csv("output3.csv",index=None)    
 
 
 
