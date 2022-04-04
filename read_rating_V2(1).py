@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-import numpy
-import pandas as pd
+import numpy    
+import pandas as pd   
 
 dataDir='C:/Users/justi/Desktop/EE-627-WS1-Final_Project/data_in_matrixForm'
 file_name_test='data_in_matrixForm/testTrack_hierarchy.txt'
@@ -11,7 +11,6 @@ output_file= 'data_in_matrixForm/output1.txt'
 # fTrain=open(file_name_train, 'r')
 # Trainline= fTrain.readline()
 # fOut = open(output_file, 'w')
-
 
 # # vectors that contains trackID, albumID, artistID, and lastUserID
 # trackID_vec=[0]*6
@@ -63,6 +62,6 @@ output_file= 'data_in_matrixForm/output1.txt'
 # fTest.close()
 # fTrain.close()
 
-dataframe = pd.read_csv("data_in_matrixForm/output1.txt", sep='|',header=None ,names=['TrackId','AlbumId','ArtistId','Optional GenreId_1'])
+dataframe = pd.read_csv("data_in_matrixForm/output21.txt", sep='|',header=None ,names=['TrackId','AlbumId','ArtistId','Optional GenreId_1'])
 #dataframe.columns = ['TrackId','AlbumId','ArtistId','Optional GenreId_1']
-dataframe.to_csv("data_in_matrixForm/output2.csv",index=None)  
+dataframe.to_csv("data_in_matrixForm/output21.csv",index=None)  
