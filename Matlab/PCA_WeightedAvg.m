@@ -1,7 +1,8 @@
 clear all
 
 data=csvread('82_features.csv',1.0);%read the csv, provided by the team
-Cols=data(:,[4 5 6 7 8 9 10 11]);%grab the columns with predictor data
+cols2=data(:,[4 5 6 7 8 9 10 11 12]);
+Cols=data(:,[4 5 6 7 8 9 10 11 12]);%grab the columns with predictor data
 [coeff,score,latent] = pca(Cols);%use the PCA function to get the coeff score and latent
 figure(1);
 bar(latent)%bar graph of the component contributions
@@ -9,7 +10,7 @@ xlabel('Principal Component');
 ylabel('Value');
 
 figure(2);
-labels = {'Component 1','Component 2','Component 3','Component 4','Component 5','Component 6','Component 7','Component 8'};
+labels = {'Component 1','Component 2','Component 3','Component 4','Component 5','Component 6','Component 7','Component 8','Component 9'};
 pie(latent)%create a pie chart of the component contributions
 legend(labels,'Location','south','Orientation','horizontal');
 
